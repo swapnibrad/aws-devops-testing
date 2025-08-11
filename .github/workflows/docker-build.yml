@@ -1,4 +1,4 @@
-name: 🚀 Build and Push Docker Image
+name: Build and Push Docker Image
 
 on:
   push:
@@ -10,17 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          username: ${{ secrets.arundevopsengineer }}
+          password: ${{ dckr_pat_nJcqqmpC40yz2wREDy6wwAYuYbs }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/devops-learning:latest .
+        run: docker build -t ${{ secrets.arundevopsengineer }}/aws-devops-learning:latest .
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/devops-learning:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/aws-devops-learning:latest
