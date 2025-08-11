@@ -1,0 +1,32 @@
+
+---
+
+## ⚙️ CI/CD Automation with GitHub Actions
+This repository includes **GitHub Actions workflows** inside `.github/workflows/`.  
+They automate key DevOps tasks such as:
+1. **Building Docker Images** from code.
+2. **Pushing Images** to Docker Hub.
+3. **Deploying** to a Linux server automatically.
+
+> Secrets like `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` are stored securely in GitHub **Actions Secrets**.
+
+Example workflow file: `.github/workflows/docker-build.yml`  
+This triggers automatically on every push to `main` and keeps my projects production-ready.
+
+---
+
+## 📌 Goals
+- Build **5+ real-world DevOps projects**
+- Maintain **daily learning habit**
+- Achieve **AWS & DevOps certifications**
+- Secure a **DevOps Engineer role (8–10 LPA)**
+
+---
+
+## 🔗 Connect With Me
+- **GitHub:** [Arun-devops-Enginner](https://github.com/Arun-devops-Enginner)
+- **LinkedIn:** *(Add your LinkedIn link here)*
+
+---
+
+⭐ If you find my learning journey inspiring, consider following me on GitHub for updates!
