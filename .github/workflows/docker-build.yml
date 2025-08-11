@@ -16,8 +16,8 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.arundevopsengineer }}
-          password: ${{ secrets.dckr_pat_nJcqqmpC40yz2wREDy6wwAYuYbs }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/aws-devops-learning:latest .
