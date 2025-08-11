@@ -20,8 +20,8 @@ jobs:
           password: ${{ secrets.dckr_pat_nJcqqmpC40yz2wREDy6wwAYuYbs }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.arundevopsengineer }}/aws-devops-learning:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/aws-devops-learning:latest .
 
       - name: Push Docker image
-        run: docker push ${{ secrets.arundevopsengineer }}/aws-devops-learning:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/aws-devops-learning:latest
 
